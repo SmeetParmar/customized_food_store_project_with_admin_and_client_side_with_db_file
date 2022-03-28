@@ -2,7 +2,8 @@
 <body>
 <?php 
 include("header.php");?>
- <table border="5" class="table table-bordered fs-5 table-hover">
+
+ <table border="5" class="table table-responsive fs-5 table-bordered table-hover">
 	<tr align="center" class="table-primary">
 		<th>Product Id</th>
 		<th>Category Id</th>
@@ -27,14 +28,14 @@ include("header.php");?>
 	while($data=mysqli_fetch_array($temp))
 	{
 	?>
-	<tr align="center" classa="text-wrap">
-		<td><?php echo $data['pid']; ?></td>
-		<td><?php echo $data['category']; ?></td>
-		<td><?php echo $data['pname']; ?></td>
+	<tr align="center">
+		<td class="text-wrap"><?php echo $data['pid']; ?></td>
+		<td class="text-wrap"><?php echo $data['category']; ?></td>
+		<td class="text-wrap"><?php echo $data['pname']; ?></td>
 		<td><?php echo $data['pprice']; ?></td>
 		<td><?php echo $data['pdesc']; ?></td>
 		<td><?php echo $data['btn1']; ?></td>
-		<td><?php echo $data['custom1']; ?></td>
+		<td class="col-md-4"><?php echo $data['custom1']; ?></td>
 		<td><?php echo $data['price1']; ?></td>
 		<td><?php echo $data['btn2']; ?></td>
 		<td><?php echo $data['custom2']; ?></td>
@@ -50,5 +51,6 @@ include("header.php");?>
 		}
 	?>
 </table>
+
 </body>
 </html>

@@ -43,11 +43,9 @@ if(!isset($_SESSION['uname']) && !isset($_SESSION['upass']))
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
+    
     </ul>
-  <a href="logout.php">Logout</a>   
+  <a href="logout.php" class="btn btn-outline-danger">Logout</a>   
   </nav>
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <div class="sidebar">
@@ -61,7 +59,7 @@ if(!isset($_SESSION['uname']) && !isset($_SESSION['upass']))
       </div>
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item menu-open">
+          <li class="nav-item">
             <a href="index.php" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
@@ -84,6 +82,14 @@ if(!isset($_SESSION['uname']) && !isset($_SESSION['upass']))
               <i class="nav-icon fas fa-address-card"></i>
               <p>
                Feedback
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="select_order.php" class="nav-link">
+              <i class="nav-icon fas fa-shopping-cart"></i>
+              <p>
+               Orders
               </p>
             </a>
           </li>

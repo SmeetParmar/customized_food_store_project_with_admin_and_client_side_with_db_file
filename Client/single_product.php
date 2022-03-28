@@ -1,6 +1,4 @@
-<?php 
-$_GLo
-?>
+
 <!DOCTYPE html>
 <html>
 <head><link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -140,7 +138,40 @@ $id=$_GET["pname"];
       }
 
    
-?>
+?><!-- 
+      Quantity   
+      <div class="btn-group btn-group-sm" role="group" aria-label="...">
+            <input type="button" onclick="decrement()" class="fs-6 btn btn-outline-primary" name="minus" value="-">
+            <input type="button" name="abc" class="fs-6 btn btn-sm btn-outline-primary" id="no" value="1">
+           
+            <input type="button" onclick="increment()" class="fs-6 btn btn-outline-primary" name="plus" value="+">
+      </div> -->
+
+      <!-- <script type="text/javascript">
+        function increment()
+        {
+            var qun = parseInt(document.getElementById('no').value);
+            if(qun<10)
+            {
+                qun++;
+                document.getElementById('no').value = qun;
+
+            }
+
+        }
+        function decrement()
+        {
+            var qun = parseInt(document.getElementById('no').value);
+            if(qun>1)
+            {
+                qun--;
+                document.getElementById('no').value = qun;
+               
+            }
+        }
+      </script> -->
+    
+      <br>
         <div class="flex">
           <?php if($GLOBALS['total']==0)
           {
@@ -167,7 +198,7 @@ $id=$_GET["pname"];
           if(mysqli_num_rows($demo)==0)
           {
              ?>
-       <a href="insert_cart.php?name=<?php echo $data['pname']; ?>&amp;total=<?php echo $GLOBALS['total']; ?>&amp;cus1=<?php echo $GLOBALS['cus1']; ?>&amp;cus2=<?php echo $GLOBALS['cus2']; ?>&amp;cus3=<?php echo $GLOBALS['cus3']; ?>" class="btn btn-danger btn-lg mt-5 fs-5">Add To Cart </a>
+       <a href="insert_cart.php?name=<?php echo $data['pname']; ?>&amp;total=<?php echo $GLOBALS['total']; ?>&amp;cus1=<?php echo $GLOBALS['cus1']; ?>&amp;cus2=<?php echo $GLOBALS['cus2']; ?>&amp;cus3=<?php echo $GLOBALS['cus3']; ?>" class="btn btn-danger btn-lg mt-5 fs-5">Add To Cart</a>
        <?php 
         }
         else

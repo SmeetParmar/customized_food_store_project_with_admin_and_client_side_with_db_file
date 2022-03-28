@@ -27,14 +27,15 @@
         <li class="nav-item mx-2">
           <a class="nav-link hfont" href="menu.php"><font class="tempfont">Menu</font></a>
         </li>
-         <li class="nav-item mx-2">
-          <a class="nav-link hfont" href="Customize.php"><font class="tempfont">Customize</font></a>
-        </li>
+        
         <li class="nav-item mx-2">
           <a class="nav-link hfont" href="about.php"><font class=" tempfont">About Us</font></a>
         </li>
            <li class="nav-item mx-2 hfont">
           <a class="nav-link hfont" href="contact.php"><font class=" tempfont">Contact Us</font></a>
+        </li>
+         <li class="nav-item mx-2">
+          <a class="nav-link hfont" href="myorders.php"><font class="tempfont">Orders</font></a>
         </li>
       </ul>
       <form class="d-flex">

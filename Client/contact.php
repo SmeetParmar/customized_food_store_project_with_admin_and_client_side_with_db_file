@@ -14,23 +14,18 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-4 col-md-4">
-<h3 class="mt-1 mb-5">Get In Touch</h3>
-<h6 class="text-dark"><i class="mdi mdi-home-map-marker"></i> Address :</h6>
-<p>86 Petersham town, New South wales Waedll Steet, Australia PA 6550</p>
-<h6 class="text-dark"><i class="mdi mdi-phone"></i> Phone :</h6>
-<p>+91 12345-67890, (+91) 123 456 7890</p>
-<h6 class="text-dark"><i class="mdi mdi-deskphone"></i> Mobile :</h6>
-<p>(+20) 220 145 6589, +91 12345-67890</p>
-<h6 class="text-dark"><i class="mdi mdi-email"></i> Email :</h6>
-<p><a href="https://askbootstrap.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f9909894968a98919897b99e94989095d79a9694">[email&#160;protected]</a>, <a href="https://askbootstrap.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="543d3a323b143339353d387a373b39">[email&#160;protected]</a></p>
-<h6 class="text-dark"><i class="mdi mdi-link"></i> Website :</h6>
-<p>www.askbootstrap.com</p>
-<div class="footer-social"><span>Follow : </span>
-<a href="#"><i class="mdi mdi-facebook"></i></a>
-<a href="#"><i class="mdi mdi-twitter"></i></a>
-<a href="#"><i class="mdi mdi-instagram"></i></a>
-<a href="#"><i class="mdi mdi-google"></i></a>
-</div>
+<h3 class="mt-1 mb-5 fs-3">Get In Touch</h3>
+<h6 class="text-dark fs-4"><i class="mdi mdi-home-map-marker"></i> Address :</h6>
+<p class="fs-6">10th Floor , Atlantis Building , Nana Mauva Chowk , Rajkot</p>
+<h6 class="text-dark fs-4"><i class="mdi mdi-phone"></i> Phone :</h6>
+<p class="fs-6">+91 12345-67890</p>
+<h6 class="text-dark fs-4"><i class="mdi mdi-deskphone"></i> Mobile :</h6>
+<p class="fs-6">(+20) 220 145 6589</p>
+<h6 class="text-dark fs-4"><i class="mdi mdi-email"></i> Email :</h6>
+<p class="fs-6">millenniumstores@gmail.com</p>
+<h6 class="text-dark fs-4"><i class="mdi mdi-link"></i> Website :</h6>
+<a href="index.php"><p class="fs-6">www.millenniumstores.com</p></a>
+
 </div>
 <div class="col-lg-8 col-md-8">
 <div class="card">
@@ -85,25 +80,43 @@
 <?php 
 if(isset($_POST['ok']))
 {
-    $a=mysqli_connect("localhost","root","","project");
-    $nm=$_POST["name"];
-    $phone=$_POST["phone"];
-    $email=$_POST["email"];
-    $msg=$_POST["msg"];
-    if($nm=="" || $phone=="" || $email=="" || $msg=="")
+    if(!isset($_SESSION['name']) && !isset($_SESSION['pass']))
     {
-        echo "<script>alert('Please Fill All Fields!!!!!!')</script>";
+        ?>
+        <script type="text/javascript">
+            if (confirm("Please Login First...")==true) 
+            {
+                window.location.href='login.php';
+            }
+            else
+            {
+                window.history.back();
+            }
+        </script>
+    <?php 
     }
     else
     {
-        if(mysqli_query($a,"INSERT INTO feedback (name,phone,email,msg) VALUES ('$nm','$phone','$email','$msg')"))
+        $a=mysqli_connect("localhost","root","","project");
+        $nm=$_POST["name"];
+        $phone=$_POST["phone"];
+        $email=$_POST["email"];
+        $msg=$_POST["msg"];
+        if($nm=="" || $phone=="" || $email=="" || $msg=="")
         {
-            //header("location:index.php");
-            echo "<script>alert('Success...Thanks For Your Feedback!!!!!')</script>";
+            echo "<script>alert('Please Fill All Fields!!!!!!')</script>";
         }
         else
         {
-            echo "<script>alert('Error!!!!')</script>";
+            if(mysqli_query($a,"INSERT INTO feedback (name,phone,email,msg) VALUES ('$nm','$phone','$email','$msg')"))
+            {
+                //header("location:index.php");
+                echo "<script>alert('Success...Thanks For Your Feedback!!!!!')</script>";
+            }
+            else
+            {
+                echo "<script>alert('Error!!!!')</script>";
+            }
         }
     }
 }
@@ -113,65 +126,6 @@ if(isset($_POST['ok']))
 </div>
 </section>
 <?php include("footer.php");?>
-
-<div class="cart-sidebar">
-<div class="cart-sidebar-header">
-<h5>
-My Cart <span class="text-success">(5 item)</span> <a data-toggle="offcanvas" class="float-right" href="#"><i class="mdi mdi-close"></i>
-</a>
-</h5>
-</div>
-<div class="cart-sidebar-body">
-<div class="cart-list-product">
- <a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/11.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/7.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/9.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/1.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/2.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-</div>
-<div class="cart-sidebar-footer">
-<div class="cart-store-details">
-<p>Sub Total <strong class="float-right">$900.69</strong></p>
-<p>Delivery Charges <strong class="float-right text-danger">+ $29.69</strong></p>
-<h6>Your total savings <strong class="float-right text-danger">$55 (42.31%)</strong></h6>
-</div>
-<a href="checkout.html"><button class="btn btn-secondary btn-lg btn-block text-left" type="button"><span class="float-left"><i class="mdi mdi-cart-outline"></i> Proceed to Checkout </span><span class="float-right"><strong>$1200.69</strong> <span class="mdi mdi-chevron-right"></span></span></button></a>
-</div>
-</div>
 
 <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/jquery/jquery.min.js" type="1a3c0690d43e04cc6061fa33-text/javascript"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" type="1a3c0690d43e04cc6061fa33-text/javascript"></script>

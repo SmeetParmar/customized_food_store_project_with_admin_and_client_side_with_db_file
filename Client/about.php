@@ -5,15 +5,12 @@
 <section class="section-padding bg-white">
 <div class="container">
 <div class="row">
-<div class="pl-4 col-lg-5 col-md-5 pr-4">
-<img class="rounded img-fluid" src="img/about.jpg" alt="Card image cap">
-</div>
-<div class="col-lg-6 col-md-6 pl-5 pr-5">
-<h2 class="mt-5 mb-5 text-secondary">Save more with GO! We give you the lowest prices on all your grocery needs.</h2>
-<h5 class="mt-2">Our Vision</h5>
-<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,</p>
-<h5 class="mt-4">Our Goal</h5>
-<p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+<div class="text-center">
+<h2 class="mt-5 mb-5 fs-1 text-secondary">Now Don't Eat Pre-Defined Dishes , Make Your Own New Dish !!!!</h2><br>
+<h5 class="mt-2 fs-1">My Vision</h5>
+<p class="fs-5">I have seen many people that they are not happy with ready made or pre-defined recepies and ingredients in a dish , to overcome that I have made this "Customizable Food Store" , In which user can customize each ingredients of his choice and make his own dish and get the best experience.</p><br>
+<h5 class="mt-4 fs-1">My Goal</h5>
+<p class="fs-5">My goal is to make this "Customizable Store" so huge that every consumer in Rajkot is happy with its own make customizable dish and enjoy it , now you all, need to regret yourself about pre-defined ingredients and also you will get everytime a good QUALITY OF FOOD.</p>
 </div>
 </div>
 </div>
@@ -23,142 +20,35 @@
 <section class="section-padding">
 <div class="section-title text-center mb-5">
 <h2>What We Provide?</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
 </div>
 <div class="container">
 <div class="row">
 <div class="col-lg-4 col-md-4">
-<div class="mt-4 mb-4"><i class="text-success mdi mdi-shopping mdi-48px"></i></div>
-<h5 class="mt-3 mb-3 text-secondary">Best Prices & Offers</h5>
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-</div>
-<div class="col-lg-4 col-md-4">
-<div class="mt-4 mb-4"><i class="text-success mdi mdi-earth mdi-48px"></i></div>
-<h5 class="mb-3 text-secondary">Wide Assortment</h5>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eve.</p>
-</div>
-<div class="col-lg-4 col-md-4">
-<div class="mt-4 mb-4"><i class="text-success mdi mdi-refresh mdi-48px"></i></div>
-<h5 class="mt-3 mb-3 text-secondary">Easy Returns</h5>
-<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-4 col-md-4">
-<div class="mt-4 mb-4"><i class="text-success mdi mdi-truck-fast mdi-48px"></i></div>
-<h5 class="mb-3 text-secondary">Free & Next Day Delivery</h5>
-<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+<div class="mt-4 mb-4"><i class="text-success mdi mdi mdi-food mdi-48px"></i></div>
+<h5 class="mt-3 mb-3 text-secondary">Variety Of Customizations</h5>
+<p class="fs-6">A good variety of customizations are available on each and every the products due to which consumer can make dish of his choice without any worries and enjoy that experience.</p>
 </div>
 <div class="col-lg-4 col-md-4">
 <div class="mt-4 mb-4"><i class="text-success mdi mdi-basket mdi-48px"></i></div>
 <h5 class="mt-3 mb-3 text-secondary">100% Satisfaction Guarantee</h5>
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+<p class="fs-6">We guranntee 100% satisfaction as , consumer satisfaction is at top priority for us we make sure that consumer is totally with quality and taste of our products.</p>
 </div>
 <div class="col-lg-4 col-md-4">
-<div class="mt-4 mb-4"><i class="text-success mdi mdi mdi-tag-heart mdi-48px"></i></div>
-<h5 class="mt-3 mb-3 text-secondary">Great Daily Deals Discount</h5>
-<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+<div class="mt-4 mb-4"><i class="text-success mdi mdi-truck-fast mdi-48px"></i></div>
+<h5 class="mb-3 text-secondary">Free & Fast Delivery</h5>
+<p class="fs-6">We have many outlets in each cities and we are also planning to make more outlets so that food item reaches to consumer in fastest way with no cost.</p>
 </div>
 </div>
 </div>
 </section>
 
 
-<section class="section-padding bg-white">
-<div class="section-title text-center mb-5">
-<h2>Our Team</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="container">
-<div class="row">
-<div class="col-lg-4 col-md-4">
-<div class="team-card text-center">
-<img class="img-fluid mb-4" src="img/user/1.jpg" alt="">
-<p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-<h6 class="mb-0 text-success">- Stave Martin</h6>
-<small>Manager</small>
-</div>
- </div>
-<div class="col-lg-4 col-md-4">
-<div class="team-card text-center">
-<img class="img-fluid mb-4" src="img/user/2.jpg" alt="">
-<p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-<h6 class="mb-0 text-success">- Mark Smith</h6>
-<small>Designer</small>
-</div>
-</div>
-<div class="col-lg-4 col-md-4">
-<div class="team-card text-center">
-<img class="img-fluid mb-4" src="img/user/3.jpg" alt="">
-<p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-<h6 class="mb-0 text-success">- Ryan Printz</h6>
-<small>Marketing</small>
-</div>
-</div>
-</div>
-</div>
-</section>
+
 
 
 <?php include("footer.php");?>
-<div class="cart-sidebar">
-<div class="cart-sidebar-header">
-<h5>
-My Cart <span class="text-success">(5 item)</span> <a data-toggle="offcanvas" class="float-right" href="#"><i class="mdi mdi-close"></i>
-</a>
-</h5>
-</div>
-<div class="cart-sidebar-body">
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/11.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/7.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/9.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/1.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-<div class="cart-list-product">
-<a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-<img class="img-fluid" src="img/item/2.jpg" alt="">
-<span class="badge badge-success">50% OFF</span>
-<h5><a href="#">Product Title Here</a></h5>
-<h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-<p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i> <span class="regular-price">$800.99</span></p>
-</div>
-</div>
-<div class="cart-sidebar-footer">
-<div class="cart-store-details">
-<p>Sub Total <strong class="float-right">$900.69</strong></p>
-<p>Delivery Charges <strong class="float-right text-danger">+ $29.69</strong></p>
-<h6>Your total savings <strong class="float-right text-danger">$55 (42.31%)</strong></h6>
-</div>
-<a href="checkout.html"><button class="btn btn-secondary btn-lg btn-block text-left" type="button"><span class="float-left"><i class="mdi mdi-cart-outline"></i> Proceed to Checkout </span><span class="float-right"><strong>$1200.69</strong> <span class="mdi mdi-chevron-right"></span></span></button></a>
-</div>
-</div>
+
 
 <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/jquery/jquery.min.js" type="e542611007672191824d3f13-text/javascript"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" type="e542611007672191824d3f13-text/javascript"></script>

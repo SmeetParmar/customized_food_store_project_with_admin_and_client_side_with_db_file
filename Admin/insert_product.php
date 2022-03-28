@@ -55,7 +55,7 @@ if(isset($_POST['select']))
 	<table class="table table-bordered table-hover">
 		<tr>
 				<td class="fs-4">Product Name</td>
-				<td><input type="text" name="pnm"></td>
+				<td><input type="text" name="pnm" required></td>
 		</tr>
 		<tr>
 				<td class="fs-4">Product Category</td>
@@ -76,36 +76,36 @@ if(isset($_POST['select']))
 		</tr>
 		<tr>
 				<td class="fs-4">Product Price</td>
-				<td><input type="text"  name="ppr"></td>
+				<td><input type="text"  required  name="ppr"></td>
 		</tr>
 		<tr>
 			<td class="fs-4">Product Description </td>
-			<td><input type="compose-textarea"  name="pdesc"></td>
+			<td><input type="compose-textarea" required name="pdesc"></td>
 		</tr>
 	    	<tr>
 			<td class="fs-4">Customization</td>
-			<td><table class="table tabble-bordered">
+			<td><table class="table table-primary">
 				<tr>
-			  	<td>	Button 1 <input type="text" name="b1"><br>    </td>
-				<td>	Customization 1 <input type="text" name="custom1"><br>    </td>
-				<td>	Price  <input type="text" name="price1"><br>    </td>
+			  	<td>	Button 1 : <input type="text"  required name="b1"><br>    </td>
+				<td>	Customization 1 : <input type="text"  required name="custom1"><br>    </td>
+				<td>	Price : <input type="text"  required name="price1"><br>    </td>
 				</tr>
 				<tr>
-			    <td>	Button 2  <input type="text" name="b2"><br>   </td>
-			    <td>	Customization 2  <input type="text" name="custom2"><br></td>
-			    <td>	Price   <input type="text" name="price2"><br>    </td>
+			    <td>	Button 2 : <input type="text"  required name="b2"><br>   </td>
+			    <td>	Customization 2 : <input type="text"  required name="custom2"><br></td>
+			    <td>	Price  : <input type="text"  required name="price2"><br>    </td>
 			    </tr>
 			    <tr>
-			    <td>    Button 3  <input type="text" name="b3"><br> </td>
-			    <td> 	Customization 3  <input type="text" name="custom3"><br>  </td>
-			    <td>	Price   <input type="text" name="price3"><br>    </td>
+			    <td>    Button 3 : <input type="text"  required name="b3"><br> </td>
+			    <td> 	Customization 3 : <input type="text"  required name="custom3"><br>  </td>
+			    <td>	Price : <input type="text"  required name="price3"><br>    </td>
 				</tr>
 				</table>
 			</td>
 		</tr>
 		<tr>
 			<td class="fs-4">Product Image</td> 
-			<td><input type="file"  name="img"></td>
+			<td><input type="file" required name="img"></td>
 		</tr>
 		<tr>
 			<td align="center" colspan="2"><input type="submit" value="Insert" name="insert" class="btn btn-primary">

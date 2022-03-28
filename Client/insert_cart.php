@@ -29,7 +29,6 @@ else
 	if($cus3==""){ $cus3="Not Choosen";}
 	if(mysqli_query($a,"INSERT INTO cart (username,custom1,custom2,custom3,product,price) VALUES ('$name','$cus1','$cus2','$cus3','$pname','$total')"))
 	{
-		$_SESSION['grandtotal']+=$total;
 		header("location:single_product.php?pname=$pname");
 	}
 	else

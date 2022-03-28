@@ -43,11 +43,11 @@ if(isset($_POST['select']))
 	<table class="table table-bordered  table-hover">
 		<tr>
 				<td class="fs-4">Slider Name</td>
-				<td><input type="text" name="snm"></td>
+				<td><input type="text"  required name="snm"></td>
 		</tr>
 		<tr>
 			<td class="fs-4">Slider Image</td> 
-			<td><input type="file"  name="img"></td>
+			<td><input type="file" required  name="img"></td>
 		</tr>
 		<tr>
 			<td align="center" colspan="2"><input type="submit" value="Insert" name="insert" class="btn btn-primary">

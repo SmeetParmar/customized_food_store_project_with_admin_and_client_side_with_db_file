@@ -51,7 +51,7 @@ if(isset($_POST['ok']))
       //echo "<br><h4>You can go to <a href='index.php'>Home Page</h4>";
       // print_r($data['name']);
       // session_start();
-      $_SESSION['grandtotal']=0;
+
       $_SESSION['name']=$data['name'];
       $_SESSION['pass']=$data['password'];
       // echo  $_SESSION['uname'];

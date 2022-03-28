@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Mirrored from askbootstrap.com/preview/groci/theme-three/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Dec 2021 14:32:53 GMT -->
 <head>
 
 </head>
@@ -15,7 +14,7 @@
           while($cat=mysqli_fetch_array($all,MYSQLI_ASSOC))
             { ?>
 <div class="item">
-<a href="shop.html"><img class="img-fluid" height=10px width=800px src="../Admin/<?php  echo $cat['img']; ?>" alt="Slide"></a>
+<a href="index.php"><img class="img-fluid" height=10px width=800px src="../Admin/<?php  echo $cat['img']; ?>" alt="<?php  echo $cat['name']; ?>"></a>
 </div>
 <?php } ?>
 </div>
@@ -24,7 +23,7 @@
 <section class="product-items-slider section-padding">
 <div class="container">
 <div class="section-header">
-<h5 class="heading-design-h5">Top Savers Today <span class="badge badge-danger">20-50% OFF</span>
+<h5 class="heading-design-h5 fs-4">Meals Of The Day  &nbsp;&nbsp;<span class="badge badge-danger">Main Course</span>
 <a class="float-right text-secondary" href="menu.php">View All</a>
 </h5>
 </div>
@@ -62,7 +61,7 @@
 <section class="product-items-slider section-padding">
 <div class="container">
 <div class="section-header">
-<h5 class="heading-design-h5">Best Offers View <span class="badge badge-info">20% OFF</span>
+<h5 class="heading-design-h5 fs-4">Afternoon Meals &nbsp;&nbsp;<span class="badge badge-info">BreakFast</span>
 <a class="float-right text-secondary" href="menu.php">View All</a>
 </h5>
 </div>
@@ -76,13 +75,13 @@
 <div class="product border">
 <a href="single_product.php?pname=<?php echo  $cat['pname']; ?>">
 <div class="product-header">
-<span class="badge badge-success ms-3">30% OFF</span>
+<span class="badge badge-success ms-3">10% OFF</span>
 <img class="img-fluid" src="../Admin/<?php  echo $cat['pimg']; ?>" alt="">
 <span class="veg text-success mdi mdi-circle me-3"></span>
 </div>
 <div class="product-body">
 <h4><font color="Cyan"><?php echo $cat['pname']; ?></font></h4>
-<h6><strong><span class="mdi mdi-approval"></span>Recommended</strong></h6>
+<h6><strong><span class="mdi mdi-approval"></span>Must Try</strong></h6>
 </div>
 <div class="product-footer">
 <p class="offer-price mb-0">Rs <?php echo $cat['pprice'];?></i><br>
@@ -102,22 +101,22 @@
 <div class="col-lg-4 col-sm-6">
 <div class="feature-box">
 <i class="mdi mdi-truck-fast"></i>
-<h6>Free & Next Day Delivery</h6>
-<p>Lorem ipsum dolor sit amet, cons...</p>
+<h6 class="fs-6">Free & Next Day Delivery</h6>
+
 </div>
 </div>
 <div class="col-lg-4 col-sm-6">
 <div class="feature-box">
 <i class="mdi mdi-basket"></i>
-<h6>100% Satisfaction Guarantee</h6>
-<p>Rorem Ipsum Dolor sit amet, cons...</p>
+<h6 class="fs-6">100% Satisfaction Guarantee</h6>
+
 </div>
 </div>
 <div class="col-lg-4 col-sm-6">
 <div class="feature-box">
 <i class="mdi mdi-tag-heart"></i>
-<h6>Great Daily Deals Discount</h6>
-<p>Sorem Ipsum Dolor sit amet, Cons...</p>
+<h6 class="fs-6">Great Customizations On Items</h6>
+
 </div>
 </div>
 </div>

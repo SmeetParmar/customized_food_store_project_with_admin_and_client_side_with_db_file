@@ -26,7 +26,7 @@ include("connect.php");
 $temp=mysqli_query($a,"SELECT * FROM category  WHERE id='".$_GET["userid"]."'");
 $data=mysqli_fetch_array($temp);
 ?>
-  Category Name <input type="text" value="<?php echo $data['Name']; ?>" class="form-control" name="nm"><br>
+  Category Name <input type="text" required value="<?php echo $data['Name']; ?>" class="form-control" name="nm"><br>
   <input type="submit" value="Update" name="update" class="btn btn-primary">
 </form>
 </body>

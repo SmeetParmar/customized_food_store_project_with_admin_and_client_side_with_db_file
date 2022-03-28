@@ -1,7 +1,7 @@
 <script type="text/javascript">
 <?php 
 session_start();
-unset($_SESSION['grandtotal']);
+
 unset($_SESSION['name']);
 unset($_SESSION['pass']);  ?>
 window.location.href='index.php';

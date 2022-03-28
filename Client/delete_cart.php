@@ -1,9 +1,13 @@
 <?php 
+session_start();
+
 $a=mysqli_connect("localhost","root","","project");
 $name=$_GET['pname'];
 $uname=$_GET['uname'];
+
 if(mysqli_query($a,"DELETE FROM cart WHERE product='$name' AND username='$uname'"))
-{
+{	
+	
 	echo "<script>window.history.back()</script>";
 }
 else

@@ -30,8 +30,8 @@ if(isset($_POST["select"]))
 <form method="POST">
 	<table class="table table-bordered ">
 		<tr>
-			<td class="fs-4">Slider Name</td>
-		    <td><input type="text" class="form-control" name="nm"></td>
+			<td class="fs-4">Category Name</td>
+		    <td><input type="text"  required class="form-control" name="nm"></td>
 		</tr>
         <tr>
         <td colspan="2" align="center"> <input type="submit" value="Insert" name="insert" class="btn btn-primary">
